@@ -34,7 +34,7 @@ int main(void) {
 			}
 			else
 			{
-				cvs_MD5Update(&context, ptr, len - remaining);
+				cvs_MD5Update(&context, ptr, remaining);
 				cvs_MD5Final(checksum, &context);
 				len -= remaining;
 				ptr += remaining;
